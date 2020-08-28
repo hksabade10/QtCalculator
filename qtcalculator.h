@@ -17,5 +17,22 @@ public:
 
 private:
     Ui::QtCalculator *ui;
+
+    double calcValue = 0;
+    bool divTrigger = false;
+    bool multTrigger = false;
+    bool addTrigger = false;
+    bool subTrigger = false;
+    bool decimalFlag = false;
+
+private slots:
+
+    void NumPressed();
+    void MathButtonPressed();
+    void EqualButton();
+    void DecimalButton();
+    void ChangeNumberSign();
+    void ClearDisplay();
+
 };
 #endif // QTCALCULATOR_H
